@@ -1,0 +1,39 @@
+button {
+  font-size: 1.5rem;
+  padding: 1rem;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  border: 3px solid black;
+}
+
+.primary {
+  background-color: rgb(69, 69, 181);
+  color: rgb(246, 246, 255);
+  border-color: rgb(69, 69, 181, 0.5);
+}
+.secondary {
+  background-color: rgb(195, 197, 207);
+  color: rgb(77, 78, 82);
+  border-color: rgba(77, 78, 82, 0.5);
+}
+.danger {
+  background-color: rgb(226, 155, 155);
+  color: rgb(92, 29, 29);
+  border-color: rgba(92, 29, 29, 0.5);
+}
+.success {
+  background-color: rgb(138, 221, 131);
+  color: rgb(23, 88, 23);
+  border-color: rgba(23, 88, 23, 0.5);
+}
+.info {
+  background-color: rgb(171, 171, 228);
+  color: rgb(24, 24, 84);
+  border-color: rgba(24, 24, 84, 0.5);
+}
+.warning {
+  background-color: rgb(223, 195, 130);
+  color: rgb(109, 89, 24);
+  border-color: rgba(109, 89, 24, 0.5);
+}
