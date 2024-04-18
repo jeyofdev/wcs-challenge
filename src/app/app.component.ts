@@ -15,18 +15,16 @@ export class AppComponent {
     { type: 'info', value: 'info', isCliked: false },
     { type: 'warning', value: 'warning', isCliked: false },
   ];
-  text!: string;
+  message!: string;
 
-  receiveEmit(event: string): void {
-    this.text = event;
-  }
-
-  receiveClick(event: boolean, index: number): void {
-    this.colors[index].isCliked = event;
+  receiveEmit(event: number): void {
+    this.colors[event].isCliked = true;
     const checkIfMinOneBtnIsClicked = this.colors.some((c) => !c.isCliked);
 
-    if (!checkIfMinOneBtnIsClicked) {
-      this.text = 'Tous les boutons ont été cliqués';
+    if (checkIfMinOneBtnIsClicked) {
+      this.message = `Bouton ${event + 1} a été cliqué`;
+    } else {
+      this.message = 'Tous les boutons ont été cliqués';
     }
   }
 }
